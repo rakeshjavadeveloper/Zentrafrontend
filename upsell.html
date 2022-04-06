@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zentra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+<link href="css/upsell.css" rel="stylesheet" type="text/css">
+<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="upsell">
+<div class="top-red-strip">
+    <div class="container">
+        <p><span>SPECIAL OFFER UNLOCKED</span>  - DO NOT EXIT OR CLOSe</p>
+    </div>
+</div>
+    
+<div class="header">
+    <div class="container">
+        <img src="images/logo.png" class="up-logo">
+    </div>
+</div> 
+ 
+<div class="up-top-hdng">
+    <div class="container">
+        <p class="hdng-txt1"><img src="images/left-arw.png" class="left-arw tadda"><span>Do You Want To Sleep Better & Wake Up Refreshed?</span> <img src="images/rgt-arw.png" class="rgt-arw taddaR"></p>
+        <p class="hdng-txt2">If Yes, Add The Night Time Sleep Support To Your Order Today!</p>
+    </div>
+</div>
+
+<div class="up-sec1">
+	<div class="container">
+    	<div class="up-s1-Box">
+        	<div class="up-s1-lft">
+            	<p class="ups1-txt1 hide-mob"><img src="images/clock1.png"  width="28"> Special Discount - For New Customers Only <img src="images/clock1.png"  width="28"></p>
+                <p class="ups1-txt1 show-mob"><img src="images/clock1.png"  width="28"> Special Discount New Customers Only <img src="images/clock1.png"  width="28"></p>
+                <p class="ups1-txt2">All Natural + Non-Addictive<br> <span>Sleep Support Formula </span></p>
+                <ul class="up-s1-list">
+                	<li>Supports Deep & Restful Sleep</li> 
+                    <li>Promotes Alertness & Energy</li> 
+                    <li>Promotes Balanced Sleep Cycles</li>
+                </ul>
+                <div class="save-strip">Your Discount Is Reserved For <img src="images/clock2.png"> <span id="stopwatch">05:00</span></div>
+                <div class="clearall"></div>
+                <img src='images/up1-prod-mob.png' class='up1-s1-prod show-mob'>
+				<div class="prcDetails">
+                    <div class="up-prcBox">
+                        <div class="prcDv">
+                            <p class="prc-txt">Retail Price</p>
+                            <div class="rtl-prc">
+                                <div class="float-prc1"><span><img src="images/red-line.png"> $399</span></div>
+                            </div>
+                        </div>
+                        <div class="prcDv prcDvline">
+                            <p class="prc-txt">Offer Price</p>
+                            <div class="rtl-prc ofr-prc">
+                                <div class="float-prc1">$69.95</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="up-savng-txt">Instant Savings 40% + Free Shipping</p>
+                </div>
+                <div class="clearall"></div>
+                <div class="btn-box">
+                    <a href="thankyou.php" class="packageBtn">
+                        <p>Yes! Add To My Order <img src="images/btn-arw.png" class="btn-arw tadda"></p>
+                    </a>
+        		</div>
+                <small class="get-btn-mbg"><span>Guaranteed Safe Checkout</span></small>
+                <div class="clearall"></div>
+                <img src="images/logos.png" alt="" class="logos">
+                
+            </div>
+            <div class="up-s1-rght hide-mob">
+            	<img src='images/up1-prod.png' class='up1-s1-prod'>
+                <div class="clearall"></div>
+                 <img src="images/up-seal.png" alt="" class="up-seal">
+                 <img src="images/offer-img.png" alt="" class="offer-img">	
+            </div>
+        </div>
+        <div class="clearall"></div>
+        <a href="thankyou.php" class="no-thank"><img src="images/no-thnx.png"> No, I Dont't Want Extra Savings!</a>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="container">
+    	<img src="images/logo.png" class="ftr-logo">
+    	<p class="ftr-txt1">
+            <a href="#">Terms & Conditions</a>  | 
+             <a href="#">Privacy Policy</a> | 
+             <a href="#">Contact Us</a>
+            <br> Copyright &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>, All Rights Reserved.
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="application/javascript">
+var spd = 100;
+var spdVal = 10;
+var cntDown = 5 * 60 * spdVal;
+setInterval(function () {
+    var mn, sc, ms;
+    cntDown--;
+    if(cntDown < 0) {
+        return false;
+    }
+    mn = Math.floor((cntDown / spdVal) / 60 );
+    mn = (mn < 10 ? '0' + mn : mn);
+    sc = Math.floor((cntDown / spdVal) % 60);
+    sc = (sc < 10 ? '0' + sc : sc);
+    ms = Math.floor(cntDown % spdVal);
+    ms = (ms < 10 ? '0' + ms : ms);
+    var result = mn + ':' + sc;
+    document.getElementById('stopwatch').innerHTML = result;
+}, spd);
+</script>
+</body>
+</html>

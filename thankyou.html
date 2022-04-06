@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zentra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+<link href="css/upsell.css" rel="stylesheet" type="text/css">
+<link href="fonts/fonts.css" rel="stylesheet" type="text/css">
+</head>
+
+<script type="text/javascript">
+function getDate(days) {      
+	var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+	var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");    
+	var now = new Date();   
+	now.setDate(now.getDate() + days);   
+	var nowString =  dayNames[now.getDay()] + ", " + monthNames[now.getMonth()] + " " +  now.getDate() ;   
+	document.write(nowString); 
+	}
+</script>
+</head>
+
+<body>
+<div class="thy-header">
+    <div class="container">
+        <img src="images/logo.png" class="ty-logo">
+    </div>
+</div> 
+ 
+<div class="tySection">
+	<div class="container">
+    	<div class="ty-banner">
+        	<h1 class="ty-title">Thank You for Your Order</h1>
+            <p class="ty-para">We are currently processing your order. You will receive a notification when it ships.</p>
+        </div>
+        
+        <div class="tyBox">
+        	<h3 class="tyb-heading">Order Receipt</h3>
+            <ul class="ty-details-box">
+            	<li>
+                	<img src="images/ty_cart.png">
+                    <p><span>Order Placed</span><script type="text/javascript">getDate(0);</script></p>
+                </li>
+                <li>
+                	<img src="images/ty_summry.png">
+                    <p><span>Order ID</span>797071 ,797072</p>
+                </li>
+                <li>
+                	<img src="images/ty_cart.png">
+                    <p><span>Estimated Delivery Date</span><script type="text/javascript">getDate(9);</script></p>
+                </li>
+            </ul>
+            
+            <div class="clearall"></div>
+            <div class="summary-box">
+            	<h3 class="tyb-heading">Items Ordered</h3>
+                <div class="summry_row">
+                	<div class="prod-left">
+                    	<img src="images/bnr-prod.png" class="ty-summry-prod">
+                        <p>Zentra<br><span>Day Time Stress Relief</span></p>
+                    </div>
+                    <div class="prc-rgt">$99.90</div>
+                </div>
+                <div class="summry_row">
+                	<div class="prod-left">
+                    	<img src="images/up1-prod.png" class="ty-summry-prod">
+                        <p>Zentra<br><span>Night Time Sleep Support</span></p>
+                    </div>
+                    <div class="prc-rgt">$69.95</div>
+                </div>
+                
+                <ul class="summry_prices">
+                	<li>Sub Total: <span>$169.85</span></li>
+                    <li>Shipping & Handling: <span>FREE</span></li>
+                    <li>Total: <span>$169.85</span></li>
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="shipping-info">
+        	<h3 class="user-info-heading">Shipping Info</h3>
+            <ul class="user-info">
+            	<li><span>First Name:</span> Lorem</li>
+                <li><span>Last Name:</span> Ipsum</li>
+                <li><span>Address:</span> 123, Church Street</li>
+                <li><span>City:</span> Mississippi</li>
+                <li><span>State:</span> CA</li>
+                <li><span>Zip Code:</span> 2311441</li>
+                <li><span>Phone:</span> 1-XXX-XXX-XXXX</li>
+                <li><span>Email:</span> name@companyname.com</li>
+            </ul>
+        </div>
+        <div class="billing-info">
+        	<h3 class="user-info-heading">Billing Info</h3>
+            <ul class="user-info">
+            	<li><span>First Name:</span> Lorem</li>
+                <li><span>Last Name:</span> Ipsum</li>
+                <li><span>Address:</span> 123, Church Street</li>
+                <li><span>City:</span> Mississippi</li>
+                <li><span>State:</span> CA</li>
+                <li><span>Zip Code:</span> 2311441</li>
+                <li><span>Phone:</span> 1-XXX-XXX-XXXX</li>
+
+                <li><span>Email:</span> name@companyname.com</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="container">
+    	<img src="images/logo.png" class="ftr-logo">
+    	<p class="ftr-txt1">
+            <a href="#">Terms & Conditions</a>  | 
+             <a href="#">Privacy Policy</a> | 
+             <a href="#">Contact Us</a>
+            <br> Copyright &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>, All Rights Reserved.
+        </p>
+    </div>
+</div> 
+
+</body>
+</html>

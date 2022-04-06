@@ -1,0 +1,42 @@
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Regular'), local('Gravity-Regular'),
+        url('Gravity-Regular.woff2') format('woff2'),
+        url('Gravity-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	}
+
+@font-face {
+    font-family: 'Gravity Book';
+    src: local('Gravity Book'), local('Gravity-Book'),
+        url('Gravity-Book.woff2') format('woff2'),
+        url('Gravity-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+	}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Bold'), local('Gravity-Bold'),
+        url('Gravity-Bold.woff2') format('woff2'),
+        url('Gravity-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+	}
+
+@font-face {
+    font-family: 'Renogare';
+    src: local('Renogare Regular'), local('Renogare-Regular'),
+        url('Renogare-Regular.woff2') format('woff2'),
+        url('Renogare-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+

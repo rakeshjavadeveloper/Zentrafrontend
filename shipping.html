@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Zentra</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="css/checkout.css">
+<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
+
+<script type="text/javascript">
+	function getDate(days) {  
+	var dayNames = new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");    
+	var monthNames = new Array("January","February","March","April","May","June","July","August","September","October","November","December");    
+	var now = new Date();   
+	now.setDate(now.getDate() + days);   
+	var nowString =  dayNames[now.getDay()] + " , " + " " + monthNames[now.getMonth()] + " " + now.getDate() + ", " + now.getFullYear();   
+	document.write(nowString); 
+	}
+</script>
+</head>
+
+<body>
+<div class="chk-top">
+	<div class="container">
+    	<img src="images/logo.png" class="chk-logo">
+        <img src="images/shipping-step.png" class="ship-stp">
+        <img src="images/safe-chk.png" class="safe-chk"> 
+    </div>
+</div>
+
+<div class="chk-strp">
+	<div class="container">
+    	<p>Free Shipping On All Orders Placed Today! Limited Time Offer <img src="images/chk-clock.png"> <span id="stopwatch"> 00:00</span></p>
+    </div>
+</div>
+
+<div class="checkout-bg">
+	<div class="container">
+    	<p class="chk-head-t">Compete Your Order Today</p>
+    	<div class="chk-s1-in">
+        	<div class="chk-box">
+            	<form action="payment.php?pid=1" method="post">
+                	<div class="hide-mob">
+                        <div class="chk-box-left">
+                            <p class="orderSummry">Order SUMMARY</p>
+                            <img src="images/chk-prd.png" class="chk-prd">
+                            <div class="chk-prc-box">
+                                <div class="chk-prc-row chk-prc-btm">
+                                    <p class="chk-wid-1 chk-wid-hd"><strong>Zentra Stress Relief</strong><br> <span>Buy 3 + Get 2 Free</span></p>
+                                    <p class="chk-wid-2 chk-wid-hd"><strong>$99.90/ea</strong></p>
+                                </div>
+                                <div class="chk-prc-row">
+                                    <p class="chk-wid-1">Purchase:</p>
+                                    <p class="chk-wid-2">Subscription</p>
+                                </div>
+                                <div class="chk-prc-row">
+                                    <p class="chk-wid-1">Price:</p>
+                                    <p class="chk-wid-2">$499.95</p>
+                                </div>
+                                <div class="chk-total">
+                                    <p class="chk-wid-1 orng"><strong>You Saved:</strong></p>
+                                    <p class="chk-wid-2 orng"><strong>20%</strong></p>
+                                </div>
+                                <div class="chk-prc-row">
+                                    <p class="chk-wid-1">Shipping:</p>
+                                    <p class="chk-wid-2">FREE</p>
+                                </div>
+                                <div class="chk-prc-row">
+                                    <p class="chk-wid-1">Total</p>
+                                    <p class="chk-wid-2">$499.95</p>
+                                </div>
+                            </div>
+                            <div class="clearall"></div>
+                            <img src="images/chk-seal.png" class="chk-seal">
+                        </div>
+                    </div> 
+                    
+					<div class="forMob">
+                        <div class="chk-box-left">
+                            <div class="summry-heading" id="summry-tog">Order SUMMARY:</div>
+                            <div class="summry-drower" style="display:none; float:left; width:100%;">
+                                <img src="images/chk-prd.png" class="chk-prd">
+                                <div class="chk-prc-box">
+                                    <div class="chk-prc-row chk-prc-btm">
+                                        <p class="chk-wid-1 chk-wid-hd"><strong>Zentra Stress Relief</strong><br> <span>Buy 3 + Get 2 Free</span></p>
+                                        <p class="chk-wid-2 chk-wid-hd"><strong>$99.90/ea</strong></p>
+                                    </div>
+                                    <div class="chk-prc-row">
+                                        <p class="chk-wid-1">Purchase:</p>
+                                        <p class="chk-wid-2">Subscription</p>
+                                    </div>
+                                    <div class="chk-prc-row">
+                                        <p class="chk-wid-1">Price:</p>
+                                        <p class="chk-wid-2">$499.95</p>
+                                    </div>
+                                    <div class="chk-total">
+                                        <p class="chk-wid-1 orng"><strong>You Saved:</strong></p>
+                                        <p class="chk-wid-2 orng"><strong>20%</strong></p>
+                                    </div>
+                                    <div class="chk-prc-row">
+                                        <p class="chk-wid-1">Shipping:</p>
+                                        <p class="chk-wid-2">FREE</p>
+                                    </div>
+                                    <div class="chk-prc-row">
+                                        <p class="chk-wid-1">Total</p>
+                                        <p class="chk-wid-2">$499.95</p>
+                                    </div>
+                                </div>
+                                <div class="clearall"></div>
+                                <img src="images/chk-seal.png" class="chk-seal">
+                            </div>
+                        </div>
+                    </div> 
+                    
+                	<div class="chk-box-rit" id="frm-step1">
+                        <p class="chk-p1">STEP 1 OF 2<img src="images/chk-step-arw.png"></p>
+                        <p class="chk-p2">Enter Shipping Information</p>
+                        <div class="chk-frm-block">
+                            <div class="frm-elements left-hlf">
+                                <label>First Name</label>
+                                <input type="text" name="fname" class="textBox" placeholder="First Name">
+                            </div>
+                            <div class="frm-elements rgt-hlf">
+                                <label>Last Name</label>
+                                <input type="text" name="fname" class="textBox" placeholder="Last Name">
+                            </div>
+                            <div class="frm-elements left-hlf">
+                                <label>Email</label>
+                                <input type="text" name="email" class="textBox" placeholder="Your Email Address">
+                            </div>
+                            <div class="frm-elements rgt-hlf">
+                                <label>Phone</label>
+                                <input type="text" name="fname" class="textBox" placeholder="Phone Number">
+                            </div>
+                            <div class="frm-elements">
+                                <label>Street Address</label>
+                                <input type="text" name="address" class="textBox" placeholder="Your Address">
+                            </div>
+                            <div class="frm-elements left-hlf">
+                                <label>City</label>
+                                <input type="text" name="city" class="textBox" placeholder="Your City">
+                            </div>
+                            <div class="frm-elements rgt-hlf">
+                                <label>Country</label>
+                                <select name="country" class="selectBox">
+                                    <option>United States</option>
+                                </select>
+                            </div>
+                            <div class="frm-elements left-hlf">
+                                <label>State</label>
+                                <select name="state" class="selectBox">
+                                    <option value="" onclick="" selected="">State:</option>
+                                       <option value="AL" onclick="">Alabama (AL)</option><option value="AK" onclick="">Alaska (AK)</option><option value="AS" onclick="">American Samoa (AS)</option><option value="AZ" onclick="">Arizona (AZ)</option><option value="AR" onclick="">Arkansas (AR)</option><option value="AE-A" onclick="">Armed Forces Africa (AE)</option><option value="AA" onclick="">Armed Forces Americas (AA)</option><option value="AE-C" onclick="">Armed Forces Canada (AE)</option><option value="AE-E" onclick="">Armed Forces Europe (AE)</option><option value="AE-M" onclick="">Armed Forces Middle East (AE)</option><option value="AP" onclick="">Armed Forces Pacific (AP)</option><option value="CA" onclick="">California (CA)</option><option value="CO" onclick="">Colorado (CO)</option><option value="CT" onclick="">Connecticut (CT)</option><option value="DE" onclick="">Delaware (DE)</option><option value="DC" onclick="">District of Columbia (DC)</option><option value="FM" onclick="">Federated States of Micronesia (FM)</option><option value="FL" onclick="">Florida (FL)</option><option value="GA" onclick="">Georgia (GA)</option><option value="GU" onclick="">Guam (GU)</option><option value="HI" onclick="">Hawaii (HI)</option><option value="ID" onclick="">Idaho (ID)</option><option value="IL" onclick="">Illinois (IL)</option><option value="IN" onclick="">Indiana (IN)</option><option value="IA" onclick="">Iowa (IA)</option><option value="KS" onclick="">Kansas (KS)</option><option value="KY" onclick="">Kentucky (KY)</option><option value="LA" onclick="">Louisiana (LA)</option><option value="ME" onclick="">Maine (ME)</option><option value="MD" onclick="">Maryland (MD)</option><option value="MA" onclick="">Massachusetts (MA)</option><option value="MI" onclick="">Michigan (MI)</option><option value="MN" onclick="">Minnesota (MN)</option><option value="MS" onclick="">Mississippi (MS)</option><option value="MO" onclick="">Missouri (MO)</option><option value="MT" onclick="">Montana (MT)</option><option value="NE" onclick="">Nebraska (NE)</option><option value="NV" onclick="">Nevada (NV)</option><option value="NH" onclick="">New Hampshire (NH)</option><option value="NJ" onclick="">New Jersey (NJ)</option><option value="NM" onclick="">New Mexico (NM)</option><option value="NY" onclick="">New York (NY)</option><option value="NC" onclick="">North Carolina (NC)</option><option value="ND" onclick="">North Dakota (ND)</option><option value="MP" onclick="">Northern Mariana Islands (MP)</option><option value="OH" onclick="">Ohio (OH)</option><option value="OK" onclick="">Oklahoma (OK)</option><option value="OR" onclick="">Oregon (OR)</option><option value="PA" onclick="">Pennsylvania (PA)</option><option value="PR" onclick="">Puerto Rico (PR)</option><option value="MH" onclick="">Republic of Marshall Islands (MH)</option><option value="RI" onclick="">Rhode Island (RI)</option><option value="SC" onclick="">South Carolina (SC)</option><option value="SD" onclick="">South Dakota (SD)</option><option value="TN" onclick="">Tennessee (TN)</option><option value="TX" onclick="">Texas (TX)</option><option value="UT" onclick="">Utah (UT)</option><option value="VT" onclick="">Vermont (VT)</option><option value="VI" onclick="">Virgin Islands of the U.S. (VI)</option><option value="VA" onclick="">Virginia (VA)</option><option value="WA" onclick="">Washington (WA)</option><option value="WV" onclick="">West Virginia (WV)</option><option value="WI" onclick="">Wisconsin (WI)</option><option value="WY" onclick="">Wyoming (WY)</option>
+                                </select>
+                            </div>
+                            <div class="frm-elements rgt-hlf">
+                                <label>Zip Code</label>
+                                <input type="text" name="zip" class="textBox" placeholder="Zip Code">
+                            </div>
+
+                            <div class="frm-elements btn-top">
+                                <button type="submit" class="frm-btn">Proceed to Checkout <img src="images/btn-arw.png" class="btn-arw tadda"></button>
+                            </div>
+                            <div class="clearall"></div>
+                            <div class="unitedBox">
+                                <img src="images/usps-logo.png"> <p>Your order is estimated to ship by<br> <script type="text/javascript">getDate(5);</script></p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="clearall"></div>
+            <div class="moneyback-blk">
+                <img src="images/money-back-seal.png"><br>
+                <span>30 Day Money Back Guarantee</span><br>
+             <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.</p> 
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="check-sec1">
+	<div class="container">
+    	<div class="comn-hdng">
+            <p>Real People . Real Results</p>
+            <span>Proin gravida velit auctor aliquet</span>
+        </div>
+        <p class="comn-para">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis<br class="forDesk"> sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+        
+        <div class="testi-sec">
+        	<div class="testi-box">
+                <img src="images/t-img1.png" class="t-img">
+                <p class="testi-hdng">Zentra REALLY helps</p>
+                <img src="images/star-rvw.png" alt="" class="t-star">
+                <p class="testi-abt">"I would get distracted at work and have to start tasks over again from the beginning. I'm amazed with how much clearer my head is every day. Zentra REALLY helps."</p>
+                <p class="testi-name">John R. <span>Costa Mesa, CA*</span></p>
+            </div>
+            <div class="testi-box">
+                <img src="images/t-img2.png" class="t-img">
+                <p class="testi-hdng">Amazing Product!!!</p>
+                <img src="images/star-rvw.png" alt="" class="t-star">
+                <p class="testi-abt">"It used to be so hard to fall asleep. As soon as I laid down and the lights went out my mind would start racing woth worries. Zentra has really helped calm my mind, I havent slept this well in years!"</p>
+                <p class="testi-name">Sara C. <span>Boston, MA*</span></p>
+            </div>
+            <div class="testi-box">
+                <img src="images/t-img2.png" class="t-img">
+                <p class="testi-hdng">Thank You Zentra!</p>
+                <img src="images/star-rvw.png" alt="" class="t-star">
+                <p class="testi-abt">"Food used to really be where I found comfort. Now that I am less stressed I don't find myself reaching for those chips &amp; cookies like I always used to after work. Thank You Zentra!"</p>
+                <p class="testi-name">Ann B. <span>Birmingham, AL*</span></p>
+            </div>
+            <div class="testi-box">
+                <img src="images/t-img2.png" class="t-img">
+                <p class="testi-hdng">It Really Works...</p>
+                <img src="images/star-rvw.png" alt="" class="t-star">
+                <p class="testi-abt">"Getting intimate was never on my mind. Stress &amp; lack of sleep made it almost impossible to be in the mood. Zentra helped with anxiety and stress so much that not only do I thank you but my wife does too!"</p>
+                <p class="testi-name">Michael S. <span>Dallas, TX*</span></p>
+            </div>
+        </div>
+        <div class="btn-box">
+            <a href="javascript:bookmarkscroll.scrollTo('fromBox')" class="packageBtn">
+                <p>Order Zentra Now! <img src="images/btn-arw.png" class="btn-arw tadda"></p>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+	<div class="container">
+    	<img src="images/logo.png" class="ftr-logo">
+    	<p class="ftr-txt1">
+            <a href="#">Terms & Conditions</a>  | 
+             <a href="#">Privacy Policy</a> | 
+             <a href="#">Contact Us</a>
+            <br> Copyright &copy; <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>, All Rights Reserved.
+        </p>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/countdown.js"></script>
+<script type="text/javascript" src="js/bookmarkscroll.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$('#summry-tog').click(function(e) {
+		$('.summry-drower').slideToggle();
+		$('#summry-tog').toggleClass('open');
+	});	
+});
+
+</script>
+</body>
+</html>
